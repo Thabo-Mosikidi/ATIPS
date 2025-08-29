@@ -1,0 +1,19 @@
+<%- include('partials/header') %>
+
+<main>
+  <h2>Select your favorite actor and show your support</h2>
+
+  <div class="actors-grid">
+    <% for(let i = 1; i <= actors; i++) { %>
+      <div class="actor-card">
+        <img src="/images/actor<%= i %>.jpg" alt="Actor <%= i %>">
+        <h3>Actor <%= i %></h3>
+        <input type="number" id="amount-Actor <%= i %>" placeholder="Amount (10-2000 ZAR)">
+        <button class="donate-btn" data-actor="Actor <%= i %>">Donate</button>
+      </div>
+    <% } %>
+  </div>
+</main>
+
+<%- include('partials/footer') %>
+<script src="/js/script.js"></script>

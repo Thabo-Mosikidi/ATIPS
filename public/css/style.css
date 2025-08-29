@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #0b3d91; /* dark blue */
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #062c6f;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 18px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.actors-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 30px;
+  justify-items: center;
+  margin-top: 30px;
+}
+
+.actor-card {
+  background-color: #1a4b9c;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.actor-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.actor-card h3 {
+  margin-bottom: 10px;
+}
+
+.actor-card input {
+  padding: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+.donate-btn {
+  padding: 10px 20px;
+  background-color: #ff0066;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.donate-btn:hover {
+  background-color: #e6005c;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #062c6f;
+  text-align: center;
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signup-form input {
+  margin: 10px 0;
+  padding: 10px;
+  width: 300px;
+  border-radius: 6px;
+  border: none;
+}
+
+.signup-form button {
+  padding: 10px 20px;
+  background-color: #ff0066;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: #e6005c;
+}
