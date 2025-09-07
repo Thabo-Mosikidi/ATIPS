@@ -12,8 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const amount = parseFloat(amountInput.value);
 
       // Validate amount
-      if (isNaN(amount) || amount < 10 || amount > 2000) {
-        alert('Please enter a donation between 10 and 2000 ZAR.');
+      if (isNaN(amount) || amount < 10) { // (isNaN(amount) || amount < 10 || amount > 2000)
+        alert('Please enter a tip amount of 10 ZAR or more.');
         return;
       }
 

@@ -24,7 +24,7 @@ app.post('/create-checkout-session', async (req, res) => {
   try {
     const { amount, actorName } = req.body;
 
-    if (!amount || amount < 10 || amount > 2000) {
+    if (!amount || amount < 10) {    // if (!amount || amount < 10 || amount > 2000)
       return res.status(400).json({ error: 'Invalid amount' });
     }
 
